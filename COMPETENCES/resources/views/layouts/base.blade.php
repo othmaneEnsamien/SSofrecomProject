@@ -103,6 +103,8 @@
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">My account {{ Auth::user()->name }}<i class="fa fa-angle-down"></i></a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="{{ route('admin.dashboard') }}">Dahboard</a></li>
+                                                    <li><a href="{{ route('admin.competences') }}">Gestion Competences</a></li>
+                                                    <li><a href="{{ route('admin.projets') }}">Gestion Projets</a></li>
                                                     <li>
                                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="padding: 12px">
                                                             @csrf

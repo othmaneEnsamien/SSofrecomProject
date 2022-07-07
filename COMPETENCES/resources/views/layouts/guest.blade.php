@@ -101,7 +101,9 @@
 										@if(Auth::user()->utype === 'ADM')
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">My account {{ Auth::user()->name }}<i class="fa fa-angle-down"></i></a>
-												
+                                            <a href="{{ route('admin.dashboard') }}">Dahboard</a>
+                                            <a href="{{ route('admin.competences') }}">Gestion Competences</a>
+                                            <a href="{{ route('admin.projets') }}">Gestion Projets</a>
 										</li>
                                         <li>
                                             <form id="logout-form" action="{{ route('logout') }}" method="POST">
